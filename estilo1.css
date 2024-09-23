@@ -1,0 +1,191 @@
+/* Estilos generales */
+#contenedor {
+    width: 90%; /* Ajuste de ancho para asegurar que se vea bien en pantallas más pequeñas */
+    margin: 20px auto;
+    background-color: #888888;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+#encabezado {
+    text-align: center;
+    background-color: #EFD80E;
+    padding: 20px;
+    border-radius: 10px 10px 0 0;
+}
+
+#menu1 {
+    background-color: #646464;
+    text-align: center;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+#menu1 a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#menu1 a:hover {
+    color: #EFD80E;
+}
+
+/* Contenedor que agrupa el menú y la imagen grande */
+#contenedor-principal {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin: 20px 0;
+    flex-wrap: wrap; /* Permitir que los elementos se ajusten en pantallas pequeñas */
+}
+
+#izquierda {
+    background: #646464;
+    width: 20%;
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#izquierda a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1.1em;
+    transition: color 0.3s ease;
+}
+
+#seccion-principal {
+    background-color: #C9C9C9;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    width: 75%; /* Ajuste para que se vea bien */
+    margin-right: 20px;
+    box-sizing: border-box;
+}
+
+.texto-lado {
+    flex: 1;
+    padding: 20px;
+    text-align: left;
+}
+
+.texto-lado h2 {
+    font-family: 'Georgia', serif;
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.texto-lado p {
+    font-size: 1.2em;
+    color: #3f3d3d;
+}
+
+.imagen-grande {
+    flex: 1;
+    text-align: right;
+}
+
+.imagen-grande img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Sección de la derecha */
+#derecha {
+    background-color: #a3a3a3;
+    width: 75%; /* Igualar el tamaño al contenedor de la imagen */
+    padding: 20px;
+    border-radius: 50px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto; /* Centrado */
+    box-sizing: border-box;
+    margin-right: 20px;
+}
+
+.imagen-exito {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.imagen-exito img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Pie de página */
+#piepagina {
+    clear: both;
+    background-color: #8F0884;
+    text-align: center;
+    padding: 10px;
+    border-radius: 0 0 10px 10px;
+    color: white;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #fff9f9;
+    line-height: 1.6;
+}
+
+h1, h5 {
+    color: #ffffff;
+    font-family: 'Georgia', serif;
+    text-align: center;
+}
+
+p {
+    margin: 15px 0;
+}
+
+/* Media Queries para móviles: Asegurar que el diseño sea fluido y se vea igual que en la PC */
+@media (max-width: 768px) {
+    /* Ajustes para tablets y móviles */
+    
+    #contenedor-principal {
+        flex-direction: column; /* Hacer que el contenido se apile verticalmente en móviles */
+    }
+    
+    #izquierda {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        margin-right: 0;
+        margin-bottom: 20px; /* Añadir espacio entre secciones en vista móvil */
+    }
+    
+    #seccion-principal {
+        width: 100%; /* Ocupa todo el ancho en móviles */
+        margin-right: 0;
+    }
+    
+    #derecha {
+        width: 100%; /* Igualar el tamaño al contenedor de la imagen */
+        margin-right: 0;
+        margin-left: 0;
+    }
+    
+    .imagen-grande img {
+        max-width: 100%; /* Asegurar que la imagen se ajuste al ancho del contenedor en móviles */
+        height: auto;
+        
+    }
+    .imagen-grande img {
+        max-width: 100%; /* Asegura que la imagen se ajuste al contenedor */
+        height: auto;    /* Mantiene la proporción de la imagen */
+        display: block;  /* Asegura que se muestre como un bloque */
+    }
+    
+    .imagen-exito img {
+        max-width: 100%; /* Asegurar que la imagen de éxito se ajuste en móviles */
+    }
+}
